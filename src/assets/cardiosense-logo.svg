@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="cardio-logo-title" preserveAspectRatio="xMidYMid meet">
+  <title id="cardio-logo-title">CardioSense AI Logo</title>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A66C2" />
+      <stop offset="100%" stop-color="#2D9CDB" />
+    </linearGradient>
+  </defs>
+  <path d="M50 88C50 88 12 60 12 36C12 24.5 21.5 15 33 15C40 15 46 18.9 50 24.5C54 18.9 60 15 67 15C78.5 15 88 24.5 88 36C88 60 50 88 50 88Z" fill="url(#grad)"/>
+  <path d="M24 44 L32 44 L36 36 L42 58 L48 50 L56 44 L64 50 L72 58 L76 40 L84 40" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

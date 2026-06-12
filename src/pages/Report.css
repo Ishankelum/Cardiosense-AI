@@ -1,0 +1,172 @@
+.report-document {
+  background-color: white;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 48px;
+  box-shadow: var(--shadow-lg);
+  border-radius: var(--radius-md);
+  color: #000;
+}
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.report-meta {
+  text-align: right;
+  font-size: 16px;
+}
+
+.report-meta p {
+  margin-bottom: 4px;
+}
+
+.divider {
+  height: 2px;
+  background-color: #1F2937;
+  margin: 24px 0;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  color: #1F2937;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.info-item {
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.info-item .label {
+  font-weight: 600;
+  min-width: 100px;
+}
+
+.report-waveform {
+  position: relative;
+  height: 120px;
+  background-color: #FFFDFD;
+  border: 1px solid #E5E7EB;
+  margin-bottom: 12px;
+}
+
+.metrics-simple {
+  display: flex;
+  gap: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.findings-box {
+  padding: 16px;
+  border: 2px solid #E5E7EB;
+  border-radius: 4px;
+}
+
+.findings-box.abnormal, .findings-box.critical {
+  border-color: #EF4444;
+  background-color: #FEF2F2;
+}
+
+.findings-box.moderate {
+  border-color: #F59E0B;
+  background-color: #FFFBEB;
+}
+
+.findings-box.normal {
+  border-color: #10B981;
+  background-color: #F0FDF4;
+}
+
+.findings-box h4 {
+  color: #991B1B;
+  margin-bottom: 12px;
+}
+
+.findings-box.moderate h4 { color: #92400E; }
+.findings-box.normal h4 { color: #065F46; }
+
+.findings-box p {
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+.doctor-notes {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+
+.signature-area {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+}
+
+.signature-line, .date-line {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+.sig-border {
+  height: 1px;
+  background-color: #000;
+  margin: 8px 0;
+}
+
+.signature-area p {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  
+  .app-container {
+    display: block;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .page-content {
+    padding: 0;
+  }
+  
+  .printable-area, .printable-area * {
+    visibility: visible;
+  }
+  
+  .printable-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    box-shadow: none;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+}

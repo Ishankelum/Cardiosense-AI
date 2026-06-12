@@ -1,0 +1,346 @@
+.patient-profile-page {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pp-back {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+}
+
+/* ── Header Card ── */
+.pp-header-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+}
+
+.pp-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0A66C2, #0D4F9C);
+  color: white;
+  font-size: 26px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pp-header-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.pp-name-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.pp-name-row h1 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #111827;
+  margin: 0;
+}
+
+.pp-id-badge {
+  background: #EBF3FF;
+  color: #0A66C2;
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 8px;
+  letter-spacing: 0.5px;
+  border: 1.5px solid #BFDBFE;
+}
+
+.pp-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 16px;
+  color: #6B7280;
+}
+
+.pp-risk-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Stats Row ── */
+.pp-stats-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.pp-stat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+}
+
+.pp-stat h3 {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0 0 2px;
+}
+
+/* ── History Card ── */
+.pp-history-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.pp-history-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 24px;
+  border-bottom: 1px solid #F3F4F6;
+}
+
+.pp-history-header h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  flex: 1;
+}
+
+.pp-report-count {
+  font-size: 16px;
+  color: #9CA3AF;
+  background: #F3F4F6;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* ── Timeline ── */
+.pp-timeline {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+}
+
+.pp-timeline::before {
+  content: '';
+  position: absolute;
+  left: 35px;
+  top: 24px;
+  bottom: 24px;
+  width: 2px;
+  background: #E5E7EB;
+}
+
+.pp-report-card {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 24px;
+  position: relative;
+}
+
+.pp-report-card:last-child {
+  padding-bottom: 0;
+}
+
+.pp-timeline-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px currentColor;
+  flex-shrink: 0;
+  margin-top: 6px;
+  z-index: 1;
+}
+
+.pp-report-body {
+  flex: 1;
+  background: #FAFAFA;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 16px;
+  transition: box-shadow 0.2s;
+}
+
+.pp-report-body:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.pp-report-latest .pp-report-body {
+  background: #F0F7FF;
+  border-color: #BFDBFE;
+}
+
+/* Top row */
+.pp-report-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pp-report-id-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pp-report-id {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 700;
+  color: #374151;
+  background: #F3F4F6;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+.pp-latest-chip {
+  font-size: 10px;
+  font-weight: 700;
+  background: #0A66C2;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.pp-status-chip {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.pp-report-date {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  color: #9CA3AF;
+}
+
+/* Vitals */
+.pp-vitals-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.pp-vital {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pp-vital-label {
+  font-size: 10px;
+  color: #9CA3AF;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.pp-vital-val {
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Conditions */
+.pp-conditions-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.pp-condition-chip {
+  font-size: 11px;
+  font-weight: 600;
+  background: #FEF3C7;
+  color: #92400E;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid #FDE68A;
+}
+
+/* Doctor note */
+.pp-doctor-note {
+  font-size: 16px;
+  background: #F9FAFB;
+  border-left: 3px solid #0A66C2;
+  padding: 8px 12px;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+.pp-note-label {
+  font-weight: 700;
+  margin-right: 6px;
+}
+
+.pp-note-text {
+  color: #6B7280;
+}
+
+/* Actions */
+.pp-report-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .pp-stats-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .pp-header-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .pp-stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pp-timeline::before {
+    left: 20px;
+  }
+}

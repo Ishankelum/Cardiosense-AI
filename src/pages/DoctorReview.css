@@ -1,0 +1,158 @@
+.review-container {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 24px;
+  height: calc(100vh - 180px);
+}
+
+.patient-list-card {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-height: calc(100vh - 160px);
+}
+
+.list-header {
+  padding: 16px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.search-filter {
+  display: flex;
+  gap: 12px;
+}
+
+.search-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background-color: #FAFAFA;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+}
+
+.search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+
+.patients-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.patient-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border-bottom: 1px solid var(--border-light);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.patient-list-item:hover {
+  background-color: #FAFAFA;
+}
+
+.patient-list-item.selected {
+  background-color: var(--secondary-blue);
+  border-left: 3px solid var(--primary-blue);
+}
+
+.patient-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #EBF3FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.patient-info-list {
+  flex: 1;
+}
+
+.patient-info-list h4 {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.patient-info-list p {
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+.dot-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.dot-indicator.danger {
+  background-color: var(--danger);
+}
+
+.dot-indicator.warning {
+  background-color: var(--warning);
+}
+
+.review-details-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.patient-summary h2 {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.mini-waveform {
+  position: relative;
+  height: 150px;
+  background-color: #FFFDFD;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.doctor-notes-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.doctor-notes-section h3 {
+  font-size: 16px;
+}
+
+.review-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-light);
+}
+
+@media (max-width: 1024px) {
+  .review-container {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}

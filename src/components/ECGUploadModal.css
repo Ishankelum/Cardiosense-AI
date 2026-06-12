@@ -1,0 +1,346 @@
+/* Modal Overlay */
+.ecg-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Modal Content */
+.ecg-modal-content {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: slideUp 0.3s ease-in-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Header */
+.ecg-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  border-bottom: 1px solid #E5E7EB;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+}
+
+.ecg-modal-header h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  color: #1F2937;
+}
+
+.ecg-modal-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6B7280;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.ecg-modal-close:hover:not(:disabled) {
+  background: #F3F4F6;
+  color: #1F2937;
+}
+
+.ecg-modal-close:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Form */
+.ecg-modal-form {
+  padding: 24px;
+}
+
+/* Sections */
+.ecg-upload-section,
+.ecg-clinical-section {
+  margin-bottom: 28px;
+}
+
+.ecg-upload-section:last-of-type {
+  margin-bottom: 0;
+}
+
+.ecg-upload-section h3,
+.ecg-clinical-section h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1F2937;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Dropzone */
+.ecg-dropzone {
+  border: 2px dashed #D1D5DB;
+  border-radius: 8px;
+  padding: 32px 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #FAFBFC;
+}
+
+.ecg-dropzone:hover {
+  border-color: #0A66C2;
+  background: #EBF3FF;
+}
+
+.ecg-dropzone-icon {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.ecg-dropzone-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1F2937;
+  margin: 0 0 8px 0;
+}
+
+.ecg-dropzone-hint {
+  font-size: 12px;
+  color: #6B7280;
+  margin: 0 0 16px 0;
+}
+
+/* File Preview */
+.ecg-file-preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+}
+
+.ecg-file-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.ecg-file-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1F2937;
+  margin: 0;
+  word-break: break-word;
+}
+
+.ecg-file-size {
+  font-size: 12px;
+  color: #9CA3AF;
+  margin: 2px 0 0 0;
+}
+
+.ecg-remove-file {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #D1D5DB;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.ecg-remove-file:hover {
+  background: #EF4444;
+  color: white;
+}
+
+/* Input Groups */
+.ecg-input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.ecg-input-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.ecg-input-field {
+  padding: 10px 12px;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: all 0.2s;
+  background: white;
+}
+
+.ecg-input-field:hover {
+  border-color: #9CA3AF;
+}
+
+.ecg-input-field:focus {
+  outline: none;
+  border-color: #0A66C2;
+  box-shadow: 0 0 0 3px rgba(10, 102, 194, 0.1);
+}
+
+textarea.ecg-input-field {
+  resize: vertical;
+  min-height: 80px;
+  font-family: inherit;
+}
+
+/* Form Rows */
+.ecg-form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+/* Measurements Grid */
+.ecg-measurements-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 480px) {
+  .ecg-measurements-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Checkboxes */
+.ecg-checkbox-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #E5E7EB;
+}
+
+.ecg-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #374151;
+  cursor: pointer;
+}
+
+.ecg-checkbox-label input {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+/* Error Message */
+.ecg-error-message {
+  padding: 12px 14px;
+  background: #FEE2E2;
+  border: 1px solid #FECACA;
+  border-radius: 6px;
+  color: #7F1D1D;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+/* Actions */
+.ecg-modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  padding-top: 16px;
+  border-top: 1px solid #E5E7EB;
+}
+
+.ecg-modal-actions button {
+  min-width: 120px;
+}
+
+/* Spinner animation */
+.spinner {
+  display: inline-block;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .ecg-modal-content {
+    max-width: 100%;
+    max-height: 95vh;
+  }
+
+  .ecg-modal-header {
+    padding: 16px;
+  }
+
+  .ecg-modal-form {
+    padding: 16px;
+  }
+
+  .ecg-measurements-grid {
+    grid-template-columns: 1fr;
+  }
+}

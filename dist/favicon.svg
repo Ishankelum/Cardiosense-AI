@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+  <!-- Heart shape -->
+  <path d="M24 42C24 42 4 28 4 18C4 12.48 8.48 8 14 8C17.16 8 20.16 9.6 22 12C23.84 9.6 26.84 8 30 8C35.52 8 40 12.48 40 18C40 28 20 42 24 42Z" fill="#0A66C2"/>
+  <!-- ECG line inside heart -->
+  <path d="M10 22 L14 22 L16 18 L18 26 L20 24 L24 22 L28 24 L30 26 L32 18 L34 22 L38 22" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

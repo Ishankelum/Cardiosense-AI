@@ -1,0 +1,180 @@
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.85); }
+}
+
+.spinner {
+  animation: spin 0.8s linear infinite;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+}
+
+.stat-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-info h3 {
+  font-size: 28px;
+  margin-bottom: 4px;
+  letter-spacing: -0.5px;
+}
+
+.stat-info p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-header h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.mt-8 {
+  margin-top: 32px;
+}
+
+/* ── Two-column layout for dashboard panels ── */
+.dash-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1100px) {
+  .dash-two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Pending review rows ── */
+.pending-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-light);
+  cursor: pointer;
+  transition: background 0.15s;
+  border-radius: var(--radius-sm);
+}
+
+.pending-row:last-child {
+  border-bottom: none;
+}
+
+.pending-row:hover {
+  background: var(--bg-main);
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 0 -8px;
+}
+
+.pending-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Quick actions grid ── */
+.quick-actions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.quick-action-card {
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  background: var(--bg-main);
+  text-decoration: none;
+  color: var(--text-dark);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.quick-action-card:hover {
+  background: var(--bg-card);
+  border-color: var(--primary-blue);
+  box-shadow: 0 4px 16px rgba(10, 102, 194, 0.1);
+  transform: translateY(-2px);
+}
+
+/* ── Empty state ── */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 40px 24px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.empty-state p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* ── Condition list item ── */
+.condition-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-main);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--border-light);
+}
+
+/* ── Badge variants ── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badge-danger  { background: #FEE2E2; color: #EF4444; }
+.badge-warning { background: #FEF3C7; color: #F59E0B; }
+.badge-success { background: #D1FAE5; color: #10B981; }
