@@ -623,7 +623,7 @@ The backend stores application data in MongoDB collections managed through Mongo
 
 1. Passwords are hashed with SHA-256 (consider bcrypt in production)
 2. JWT tokens expire in 7 days
-3. CORS is enabled for `localhost:5173` and `localhost:3000`
+3. CORS is enabled for `localhost:5174` and `localhost:3000`
 4. File uploads are stored in `/uploads` directory
 5. All authenticated endpoints require valid JWT token
 

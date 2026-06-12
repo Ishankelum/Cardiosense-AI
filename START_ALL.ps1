@@ -36,7 +36,7 @@ Start-Process -FilePath "npm" `
 Write-Host ""
 Write-Host "All services starting..."
 Write-Host ""
-Write-Host "  React Dashboard  ->  http://localhost:5173"
+Write-Host "  React Dashboard  ->  http://localhost:5174"
 Write-Host "  Node.js API      ->  http://localhost:5001/api/health"
 Write-Host "  Python AI        ->  http://localhost:5002/health"
 Write-Host ""

@@ -17,7 +17,7 @@ cd "D:\Cardiosense-AI-Website-main\Cardiosense-AI-Website-main"
 This opens three windows:
 | Service | URL |
 |---|---|
-| React Dashboard | http://localhost:5173 |
+| React Dashboard | http://localhost:5174 |
 | Node.js API | http://localhost:5001 |
 | Python AI | http://localhost:5002 |
 
@@ -74,7 +74,7 @@ Patient ECG PDF + Clinical Measurements
          ↓
    MongoDB (stores report + analysis)
          ↓
-   React Dashboard (port 5173)
+   React Dashboard (port 5174)
     ├── Upload ECG page (with clinical fields)
     ├── Results page (risk bands, ECG viewer)
     ├── Doctor Review (approve / reject / save draft)
