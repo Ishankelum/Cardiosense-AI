@@ -338,6 +338,6 @@ CardioSense AI is intended as a health monitoring and informational tool only. I
 
 <div align="center">
 
-Made with ❤️ by [Hiruniathukorala](https://github.com/Hiruniathukorala)
+Made with ❤️ by Ishan Kelum
 
 </div>
