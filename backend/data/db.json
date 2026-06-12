@@ -1,0 +1,536 @@
+{
+  "users": [
+    {
+      "_id": "9all60s6mq0fih9d",
+      "name": "Dr. Test User",
+      "email": "drtest@cardiosense.ai",
+      "passwordHash": "$2a$10$lxzhFpRKk.JFQWFElslpTOHA3biO92HOuTPNw.ITl.6.JJJa/pjTO",
+      "role": "Cardiologist",
+      "specialization": "General Cardiology",
+      "licenseNumber": null,
+      "createdAt": "2026-06-05T04:33:27.265Z",
+      "updatedAt": "2026-06-05T04:33:27.265Z"
+    },
+    {
+      "_id": "bv2l3o0mmq0fjj7c",
+      "name": "Dr. Hiruni Athukorala",
+      "email": "hiruni@cardiosense.ai",
+      "passwordHash": "$2a$10$H1vYKnB7dXbQuVZ66l3EGeIpsUk0O27Yf4MzYRL0HhcjB1WZJgZGa",
+      "role": "Cardiologist",
+      "specialization": "General Cardiology",
+      "licenseNumber": null,
+      "isActive": true,
+      "createdAt": "2026-06-05T04:34:16.439Z",
+      "updatedAt": "2026-06-05T04:34:16.439Z"
+    },
+    {
+      "_id": "qmu0qkgvmq0fno0b",
+      "name": "Hiruni",
+      "email": "hiruni@gmail.com",
+      "passwordHash": "$2a$10$3zGNuFQH9ABj6urhfQeaHO5rHJh8fs18P5O7XYszgogSto.pnccA2",
+      "role": "Patient",
+      "specialization": null,
+      "licenseNumber": null,
+      "isActive": true,
+      "createdAt": "2026-06-05T04:37:29.291Z",
+      "updatedAt": "2026-06-05T04:37:29.291Z"
+    },
+    {
+      "_id": "9jdenfcrmq0fq555",
+      "name": "Harsha",
+      "email": "harsha@gmail.com",
+      "passwordHash": "$2a$10$eewEod40pL2rOLHhqAm10eVhMCTiNofATMZvzyHN9WvYtFduatnqG",
+      "role": "Cardiologist",
+      "specialization": "General Cardiology",
+      "licenseNumber": null,
+      "isActive": true,
+      "createdAt": "2026-06-05T04:39:24.809Z",
+      "updatedAt": "2026-06-05T04:39:24.809Z"
+    },
+    {
+      "_id": "dffr27irmq0sk0qv",
+      "name": "Punuja",
+      "email": "punuja@gmail.com",
+      "passwordHash": "$2a$10$ck2pXyFYELrkkpZg.msmOOpSWf8GG4gkfNNmBsmwXdai72zGhwjQS",
+      "role": "Patient",
+      "specialization": null,
+      "licenseNumber": null,
+      "isActive": true,
+      "createdAt": "2026-06-05T10:38:34.183Z",
+      "updatedAt": "2026-06-05T10:38:34.183Z"
+    },
+    {
+      "_id": "3jefqtwemq0tgu2z",
+      "name": "Janani",
+      "email": "janani@gmail.com",
+      "passwordHash": "$2a$10$Trsr0Vf6v5rQcTG3jptIZuocHXO23724QwDgGCckUl/nGYBVNKOx2",
+      "role": "Patient",
+      "specialization": null,
+      "licenseNumber": null,
+      "isActive": true,
+      "createdAt": "2026-06-05T11:04:05.195Z",
+      "updatedAt": "2026-06-05T11:04:05.195Z"
+    },
+    {
+      "_id": "wk3ceab3mq0ufb81",
+      "name": "Test Check",
+      "email": "healthcheck@test.com",
+      "passwordHash": "$2a$10$kCIKESvhyUF1uzLLCXsTNe2MMN48IxMePjiaqHgnZG.but0MfyEXK",
+      "role": "Patient",
+      "specialization": null,
+      "licenseNumber": null,
+      "isActive": true,
+      "createdAt": "2026-06-05T11:30:53.713Z",
+      "updatedAt": "2026-06-05T11:30:53.713Z"
+    },
+    {
+      "_id": "88npl5knmq0ugco3",
+      "name": "Audit Test",
+      "email": "audittest@test.com",
+      "passwordHash": "$2a$10$OxeCpt531gEYgfIew5XZMu8RbPB9pj8ZzO3kKd4gLKkBph6nEXE7.",
+      "role": "Patient",
+      "specialization": null,
+      "licenseNumber": null,
+      "isActive": true,
+      "createdAt": "2026-06-05T11:31:42.243Z",
+      "updatedAt": "2026-06-05T11:31:42.243Z"
+    }
+  ],
+  "reports": [
+    {
+      "_id": "tp1m373lmq0gr8ne",
+      "reportId": "ECG-1780636095626",
+      "patientName": "Hiruni Athukorala",
+      "patientEmail": "hiruni@gmail.com",
+      "patientAge": 23,
+      "patientGender": "male",
+      "symptoms": "abc",
+      "notes": "xyz",
+      "cardiologistName": "Harsha",
+      "cardiologistEmail": "harsha@gmail.com",
+      "status": "Approved",
+      "confidence": "55",
+      "conditions": [
+        "Bradycardia"
+      ],
+      "fileUrl": "/uploads/1780636095528-ecg.pdf",
+      "fileName": "ecg.pdf",
+      "fileSize": 157210,
+      "doctorNotes": "",
+      "doctorAssessment": "",
+      "analysis": {
+        "conditions": [
+          {
+            "confidence": 53,
+            "name": "Bradycardia",
+            "severity": "Low"
+          }
+        ],
+        "confidence": 55,
+        "confidenceLabel": "<70% confidence — Expert interpretation mandatory",
+        "confidenceTier": "Low",
+        "heartRate": 50,
+        "prInterval": 164,
+        "predictionProbability": 2.7,
+        "qrsDuration": 85,
+        "qtInterval": 382,
+        "qtcInterval": 349,
+        "recommendation": "LOW RISK — ECG within acceptable limits. Routine annual follow-up recommended. Maintain healthy lifestyle and manage cardiovascular risk factors.",
+        "rhythmType": "Sinus Bradycardia",
+        "riskScore": 3,
+        "stDeviation": 0.1,
+        "status": "Normal",
+        "triage": "ROUTINE"
+      },
+      "createdAt": "2026-06-05T05:08:15.626Z",
+      "updatedAt": "2026-06-05T05:08:58.624Z",
+      "finalizedAt": "2026-06-05T05:08:58.624Z"
+    },
+    {
+      "_id": "p8hfgvr2mq0l5oty",
+      "reportId": "ECG-1780643488246",
+      "patientName": "Hiruni Lalithya",
+      "patientEmail": "hiruni@gmail.com",
+      "patientAge": 25,
+      "patientGender": "female",
+      "symptoms": "xyz",
+      "notes": "abc",
+      "cardiologistName": "Harsha",
+      "cardiologistEmail": "harsha@gmail.com",
+      "status": "High Risk",
+      "confidence": "83.7",
+      "conditions": [
+        "Atrial Fibrillation",
+        "Mild ST Depression",
+        "Coronary Artery Disease",
+        "Tachycardia"
+      ],
+      "fileUrl": "/uploads/1780643488116-ecg.pdf",
+      "fileName": "ecg.pdf",
+      "fileSize": 157210,
+      "doctorNotes": "",
+      "doctorAssessment": "",
+      "analysis": {
+        "conditions": [
+          {
+            "confidence": 85.7,
+            "name": "Atrial Fibrillation",
+            "severity": "High"
+          },
+          {
+            "confidence": 83.7,
+            "name": "Mild ST Depression",
+            "severity": "Moderate"
+          },
+          {
+            "confidence": 83.7,
+            "name": "Coronary Artery Disease",
+            "severity": "High"
+          },
+          {
+            "confidence": 81.7,
+            "name": "Tachycardia",
+            "severity": "Moderate"
+          }
+        ],
+        "confidence": 83.7,
+        "confidenceLabel": "70–90% confidence — Careful cardiologist review flagged",
+        "confidenceTier": "Medium",
+        "heartRate": 165,
+        "prInterval": 177,
+        "predictionProbability": 85.2,
+        "qrsDuration": 108,
+        "qtInterval": 440,
+        "qtcInterval": 730,
+        "recommendation": "HIGH RISK — Urgent cardiologist review required within 24 hours. Significant cardiac abnormalities detected. Detailed workup, stress testing, and imaging recommended.",
+        "rhythmType": "Atrial Fibrillation",
+        "riskScore": 85,
+        "stDeviation": 1.8,
+        "status": "High Risk",
+        "triage": "URGENT"
+      },
+      "createdAt": "2026-06-05T07:11:28.246Z",
+      "updatedAt": "2026-06-05T07:11:28.246Z"
+    },
+    {
+      "_id": "nz3jm9dsmq0sma3x",
+      "reportId": "ECG-1780656019629",
+      "patientName": "Punuja Lokith",
+      "patientEmail": "punuja@gmail.com",
+      "patientAge": 22,
+      "patientGender": "male",
+      "symptoms": "abc",
+      "notes": "xyz",
+      "cardiologistName": "Harsha",
+      "cardiologistEmail": "harsha@gmail.com",
+      "status": "Normal",
+      "confidence": "55",
+      "conditions": [
+        "Mild ST Depression",
+        "Tachycardia"
+      ],
+      "fileUrl": "/uploads/1780656019607-ecg.pdf",
+      "fileName": "ecg.pdf",
+      "fileSize": 157210,
+      "doctorNotes": "",
+      "doctorAssessment": "",
+      "analysis": {
+        "conditions": [
+          {
+            "confidence": 55,
+            "name": "Mild ST Depression",
+            "severity": "Moderate"
+          },
+          {
+            "confidence": 53,
+            "name": "Tachycardia",
+            "severity": "Moderate"
+          }
+        ],
+        "confidence": 55,
+        "confidenceLabel": "<70% confidence — Expert interpretation mandatory",
+        "confidenceTier": "Low",
+        "heartRate": 155,
+        "prInterval": 156,
+        "predictionProbability": 1.4,
+        "qrsDuration": 104,
+        "qtInterval": 381,
+        "qtcInterval": 612,
+        "recommendation": "LOW RISK — ECG within acceptable limits. Routine annual follow-up recommended. Maintain healthy lifestyle and manage cardiovascular risk factors.",
+        "rhythmType": "Sinus Tachycardia",
+        "riskScore": 1,
+        "stDeviation": 1,
+        "status": "Normal",
+        "triage": "ROUTINE"
+      },
+      "createdAt": "2026-06-05T10:40:19.629Z",
+      "updatedAt": "2026-06-05T10:40:19.629Z"
+    },
+    {
+      "_id": "fr6q953ymq0swria",
+      "reportId": "ECG-1780656508738",
+      "patientName": "Ravindu",
+      "patientEmail": "ravindu@gmail.com",
+      "patientAge": 25,
+      "patientGender": "male",
+      "symptoms": "",
+      "notes": "",
+      "cardiologistName": "Harsha",
+      "cardiologistEmail": "harsha@gmail.com",
+      "status": "Normal",
+      "confidence": "55",
+      "conditions": [
+        "Tachycardia"
+      ],
+      "fileUrl": "/uploads/1780656508728-sample_bradycardia_45bpm.csv",
+      "fileName": "sample_bradycardia_45bpm.csv",
+      "fileSize": 45004,
+      "doctorNotes": "",
+      "doctorAssessment": "",
+      "analysis": {
+        "conditions": [
+          {
+            "confidence": 53,
+            "name": "Tachycardia",
+            "severity": "Moderate"
+          }
+        ],
+        "confidence": 55,
+        "confidenceLabel": "<70% confidence — Expert interpretation mandatory",
+        "confidenceTier": "Low",
+        "heartRate": 150,
+        "prInterval": 156,
+        "predictionProbability": 0.1,
+        "qrsDuration": 105,
+        "qtInterval": 380,
+        "qtcInterval": 601,
+        "recommendation": "LOW RISK — ECG within acceptable limits. Routine annual follow-up recommended. Maintain healthy lifestyle and manage cardiovascular risk factors.",
+        "rhythmType": "Sinus Tachycardia",
+        "riskScore": 0,
+        "stDeviation": 0,
+        "status": "Normal",
+        "triage": "ROUTINE"
+      },
+      "createdAt": "2026-06-05T10:48:28.738Z",
+      "updatedAt": "2026-06-05T10:48:28.738Z"
+    },
+    {
+      "_id": "hytdydnomq0szy9s",
+      "reportId": "ECG-1780656657472",
+      "patientName": "Janani",
+      "patientEmail": "janani@gmail.com",
+      "patientAge": 23,
+      "patientGender": "female",
+      "symptoms": "",
+      "notes": "",
+      "cardiologistName": "Harsha",
+      "cardiologistEmail": "harsha@gmail.com",
+      "status": "Normal",
+      "confidence": "55",
+      "conditions": [
+        "Tachycardia"
+      ],
+      "fileUrl": "/uploads/1780656657432-test_ecg_normal.csv",
+      "fileName": "test_ecg_normal.csv",
+      "fileSize": 79525,
+      "doctorNotes": "",
+      "doctorAssessment": "",
+      "analysis": {
+        "conditions": [
+          {
+            "confidence": 53,
+            "name": "Tachycardia",
+            "severity": "Moderate"
+          }
+        ],
+        "confidence": 55,
+        "confidenceLabel": "<70% confidence — Expert interpretation mandatory",
+        "confidenceTier": "Low",
+        "heartRate": 150,
+        "prInterval": 166,
+        "predictionProbability": 0,
+        "qrsDuration": 98,
+        "qtInterval": 380,
+        "qtcInterval": 601,
+        "recommendation": "LOW RISK — ECG within acceptable limits. Routine annual follow-up recommended. Maintain healthy lifestyle and manage cardiovascular risk factors.",
+        "rhythmType": "Sinus Tachycardia",
+        "riskScore": 0,
+        "stDeviation": 0,
+        "status": "Normal",
+        "triage": "ROUTINE"
+      },
+      "createdAt": "2026-06-05T10:50:57.472Z",
+      "updatedAt": "2026-06-05T10:50:57.472Z"
+    },
+    {
+      "_id": "k84510ezmq0t2qsj",
+      "reportId": "ECG-1780656787747",
+      "patientName": "Janani",
+      "patientEmail": "janani@gmail.com",
+      "patientAge": 23,
+      "patientGender": "female",
+      "symptoms": "",
+      "notes": "",
+      "cardiologistName": "Harsha",
+      "cardiologistEmail": "harsha@gmail.com",
+      "status": "Normal",
+      "confidence": "55",
+      "conditions": [
+        "Tachycardia"
+      ],
+      "fileUrl": "/uploads/1780656787723-test_ecg_normal.csv",
+      "fileName": "test_ecg_normal.csv",
+      "fileSize": 79525,
+      "doctorNotes": "",
+      "doctorAssessment": "",
+      "analysis": {
+        "conditions": [
+          {
+            "confidence": 53,
+            "name": "Tachycardia",
+            "severity": "Moderate"
+          }
+        ],
+        "confidence": 55,
+        "confidenceLabel": "<70% confidence — Expert interpretation mandatory",
+        "confidenceTier": "Low",
+        "heartRate": 150,
+        "prInterval": 178,
+        "predictionProbability": 1.6,
+        "qrsDuration": 83,
+        "qtInterval": 381,
+        "qtcInterval": 602,
+        "recommendation": "LOW RISK — ECG within acceptable limits. Routine annual follow-up recommended. Maintain healthy lifestyle and manage cardiovascular risk factors.",
+        "rhythmType": "Sinus Tachycardia",
+        "riskScore": 2,
+        "stDeviation": 0,
+        "status": "Normal",
+        "triage": "ROUTINE"
+      },
+      "createdAt": "2026-06-05T10:53:07.747Z",
+      "updatedAt": "2026-06-05T10:53:07.747Z"
+    }
+  ],
+  "notifications": [
+    {
+      "_id": "mnct3db3mq0l5ou1",
+      "recipientEmail": "harsha@gmail.com",
+      "type": "new_ecg",
+      "title": "📋 New ECG Upload — Hiruni Lalithya",
+      "message": "New ECG analysis ready. Risk score: 85/100 (High Risk).",
+      "reportId": "p8hfgvr2mq0l5oty",
+      "riskScore": 85,
+      "read": false,
+      "createdAt": "2026-06-05T07:11:28.249Z",
+      "updatedAt": "2026-06-05T07:11:28.249Z"
+    },
+    {
+      "_id": "yofuuy6omq0l5ou2",
+      "recipientEmail": "hiruni@gmail.com",
+      "type": "new_ecg",
+      "title": "✅ Your ECG Has Been Analyzed",
+      "message": "Your ECG report is ready. Risk score: 85/100 — High Risk. Your cardiologist will review shortly.",
+      "reportId": "p8hfgvr2mq0l5oty",
+      "riskScore": 85,
+      "read": false,
+      "createdAt": "2026-06-05T07:11:28.250Z",
+      "updatedAt": "2026-06-05T07:11:28.250Z"
+    },
+    {
+      "_id": "jukfspzemq0sma3z",
+      "recipientEmail": "harsha@gmail.com",
+      "type": "new_ecg",
+      "title": "📋 New ECG Upload — Punuja Lokith",
+      "message": "New ECG analysis ready. Risk score: 1/100 (Normal).",
+      "reportId": "nz3jm9dsmq0sma3x",
+      "riskScore": 1,
+      "read": false,
+      "createdAt": "2026-06-05T10:40:19.631Z",
+      "updatedAt": "2026-06-05T10:40:19.631Z"
+    },
+    {
+      "_id": "3pizffdsmq0sma40",
+      "recipientEmail": "punuja@gmail.com",
+      "type": "new_ecg",
+      "title": "✅ Your ECG Has Been Analyzed",
+      "message": "Your ECG report is ready. Risk score: 1/100 — Normal. Your cardiologist will review shortly.",
+      "reportId": "nz3jm9dsmq0sma3x",
+      "riskScore": 1,
+      "read": false,
+      "createdAt": "2026-06-05T10:40:19.632Z",
+      "updatedAt": "2026-06-05T10:40:19.632Z"
+    },
+    {
+      "_id": "e136icdimq0swric",
+      "recipientEmail": "harsha@gmail.com",
+      "type": "new_ecg",
+      "title": "📋 New ECG Upload — Ravindu",
+      "message": "New ECG analysis ready. Risk score: 0/100 (Normal).",
+      "reportId": "fr6q953ymq0swria",
+      "riskScore": 0,
+      "read": false,
+      "createdAt": "2026-06-05T10:48:28.740Z",
+      "updatedAt": "2026-06-05T10:48:28.740Z"
+    },
+    {
+      "_id": "fwb117jhmq0swrie",
+      "recipientEmail": "ravindu@gmail.com",
+      "type": "new_ecg",
+      "title": "✅ Your ECG Has Been Analyzed",
+      "message": "Your ECG report is ready. Risk score: 0/100 — Normal. Your cardiologist will review shortly.",
+      "reportId": "fr6q953ymq0swria",
+      "riskScore": 0,
+      "read": false,
+      "createdAt": "2026-06-05T10:48:28.742Z",
+      "updatedAt": "2026-06-05T10:48:28.742Z"
+    },
+    {
+      "_id": "p1h4nrsumq0szy9t",
+      "recipientEmail": "harsha@gmail.com",
+      "type": "new_ecg",
+      "title": "📋 New ECG Upload — Janani",
+      "message": "New ECG analysis ready. Risk score: 0/100 (Normal).",
+      "reportId": "hytdydnomq0szy9s",
+      "riskScore": 0,
+      "read": false,
+      "createdAt": "2026-06-05T10:50:57.473Z",
+      "updatedAt": "2026-06-05T10:50:57.473Z"
+    },
+    {
+      "_id": "nctscfscmq0szy9v",
+      "recipientEmail": "janani@gmail.com",
+      "type": "new_ecg",
+      "title": "✅ Your ECG Has Been Analyzed",
+      "message": "Your ECG report is ready. Risk score: 0/100 — Normal. Your cardiologist will review shortly.",
+      "reportId": "hytdydnomq0szy9s",
+      "riskScore": 0,
+      "read": false,
+      "createdAt": "2026-06-05T10:50:57.475Z",
+      "updatedAt": "2026-06-05T10:50:57.475Z"
+    },
+    {
+      "_id": "xcjn84b6mq0t2qsk",
+      "recipientEmail": "harsha@gmail.com",
+      "type": "new_ecg",
+      "title": "📋 New ECG Upload — Janani",
+      "message": "New ECG analysis ready. Risk score: 2/100 (Normal).",
+      "reportId": "k84510ezmq0t2qsj",
+      "riskScore": 2,
+      "read": false,
+      "createdAt": "2026-06-05T10:53:07.748Z",
+      "updatedAt": "2026-06-05T10:53:07.748Z"
+    },
+    {
+      "_id": "fbtqmrjbmq0t2qsm",
+      "recipientEmail": "janani@gmail.com",
+      "type": "new_ecg",
+      "title": "✅ Your ECG Has Been Analyzed",
+      "message": "Your ECG report is ready. Risk score: 2/100 — Normal. Your cardiologist will review shortly.",
+      "reportId": "k84510ezmq0t2qsj",
+      "riskScore": 2,
+      "read": false,
+      "createdAt": "2026-06-05T10:53:07.750Z",
+      "updatedAt": "2026-06-05T10:53:07.750Z"
+    }
+  ]
+}
